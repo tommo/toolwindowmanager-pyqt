@@ -27,7 +27,7 @@ class ToolWindowManagerWrapper( QtGui.QWidget ) :
 			qWarning('too many children for wrapper')
 			return result
 
-		if self.isWindow() and layout().count() == 0:
+		if self.isWindow() and self.layout().count() == 0:
 			qWarning('empty top level wrapper')
 			return result
 
